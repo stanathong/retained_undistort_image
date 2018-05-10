@@ -12,7 +12,9 @@ __Library Directory__<br>
 
 __Library__<br>
 
-`Add these libs to the line: opencv_core310.lib;opencv_highgui310.lib;opencv_imgproc310.lib;opencv_video310.lib;opencv_imgcodecs310.lib;opencv_calib3d310.lib;%(AdditionalDependencies)`<br>
+Add these libs to the line: <br>
+
+`opencv_core310.lib;opencv_highgui310.lib;opencv_imgproc310.lib;opencv_video310.lib;opencv_imgcodecs310.lib;opencv_calib3d310.lib;%(AdditionalDependencies)`<br>
 
 _Note_ The number in the filename can be varied depending on your OpenCV version_<br>
 
