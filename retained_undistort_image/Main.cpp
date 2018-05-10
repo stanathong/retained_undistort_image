@@ -16,7 +16,7 @@
 int main(int argc, char *argv[])
 {
 	// Image to perform undistort
-	std::string image_path = "G:/YORK-Project/Experiment/gaist_data/bradley_shorten/2017/20170111/130311/Carriageway_raw/Carriageway_37.jpg";
+	std::string image_path = "G:/Carriageway_37.jpg";
 	// Intrinsic parameters
 	double fx = 1738.06409;
 	double fy = 1736.96128;
