@@ -16,7 +16,7 @@ Add these libs to the line: <br>
 
 `opencv_core310.lib;opencv_highgui310.lib;opencv_imgproc310.lib;opencv_video310.lib;opencv_imgcodecs310.lib;opencv_calib3d310.lib;%(AdditionalDependencies)`<br>
 
-_Note_ The number in the filename can be varied depending on your OpenCV version_<br>
+_Note:_ The number in the filename can be varied depending on your OpenCV version<br>
 
 ![Lib](https://github.com/stanathong/retained_undistort_image/blob/master/project_setting/lib.jpg)
 
