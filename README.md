@@ -16,7 +16,7 @@ __Output:__ undistorted images saved into files named `undistorted_out1.jpg` `an
 
 __Steps__<br>
 
-1. Due to the distortion factors, it is most likely that the undistorted image will be bigger or smaller than the original image. To retain the resolution of the input image, we have to compute the image size of the undistorted image. With the four extreme corners of the input image: top-left (0,0), top-right (image_size.width-1, 0), bottom-right (image_size.width-1, image_size.height-1) and bottom-left (0, image_size.height-1), we undistort them to get the corresponding coords in the undistorted image.<br>
+1. Due to the distortion factors, it is most likely that the undistorted image will be bigger or smaller than the original image. To retain the resolution of the input image, we have to compute the image size of the undistorted image. With the four extreme corners of the input image: `top-left (0,0)`, `top-right (image_size.width-1, 0)`, `bottom-right (image_size.width-1, image_size.height-1)` and `bottom-left (0, image_size.height-1)`, we undistort them to get the corresponding coords in the undistorted image.<br>
 
 2. We create undistort image using the effortless method by calling `cv::initUndistortRectifyMap` and `cv::getOptimalNewCameraMatrix`.<br>
 
