@@ -11,7 +11,7 @@ The code is implemented using MS Visual Studio 2012. The project files and the s
 
 We implement two methods to produce undistorted image. The first one is a simple and effortless method using `cv::initUndistortRectifyMap` and `cv::getOptimalNewCameraMatrix`. The second one is the reverse distortion technique in which we replicate the way OpenCV's `undistort()` function works (I believe?) in order to produce the undistorted image. <br>
 
-__Input:__ input image (undistorted), $3x3$ intrinsics matrix (`K`) and distortion matrix <br>
+__Input:__ (undistorted) input image, `3x3` intrinsics matrix (`K`) and distortion matrix <br>
 __Output:__ undistorted images saved into files named `undistorted_out1.jpg` `and undistorted_out2.jpg` <br>
 
 __Steps__<br>
