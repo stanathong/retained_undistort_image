@@ -28,7 +28,7 @@ The reverse distortion is illustrated as the figure below:<br>
 
 <br>
 
-The undistorted function (f_undistorted) is defined as the equation to compute distorted coordinates from undistorted coordinates is<br>
+The undistorted function (f_undistorted) is defined as the equation to compute distorted coordinates from undistorted coordinates. Simply speaking, it is to add the distortion to the ideal coordinate points.<br>
 
 ![equation](https://github.com/stanathong/retained_undistort_image/blob/master/figure/equation.jpg)
 
