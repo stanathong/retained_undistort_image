@@ -39,14 +39,14 @@ The undistorted function (f_undistorted) is defined as the equation to compute d
 _Note:_ In the code, the distortion coefficients: k1, k2, p1 and p2 are only used in the code. That is because the calibration tool usually produce upto k3. However, if you have k3, you can simply modify the distortion coefficient matrix and the function to distort the point.
 ```
 void distortPoint(cv::Mat &K, cv::Mat &distortionCoef, 
-				double in_x, double in_y, 
-        /*out*/double &out_x, /*out*/double &out_y)
+                  double in_x, double in_y, 
+		  /*out*/double &out_x, /*out*/double &out_y)
 {
     ...
     // Modify the equation here to handle k3
-	  double r2 = x*x + y*y;
-	  double kcoef = 1 + k1*r2 + k2*r2*r2;
-	  double x_ = x*kcoef + 2*p1*x*y + p2*(r2 + 2*x*x);
+    double r2 = x*x + y*y;
+    double kcoef = 1 + k1*r2 + k2*r2*r2;
+    double x_ = x*kcoef + 2*p1*x*y + p2*(r2 + 2*x*x);
     double y_ = y*kcoef + p1*(r2 + 2*y*y) + 2*p2*x*y;     
     ...
 }
