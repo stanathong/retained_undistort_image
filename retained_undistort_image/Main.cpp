@@ -38,7 +38,7 @@ void distortPoint(	cv::Mat &K, cv::Mat &distortionCoef,
 int main(int argc, char *argv[])
 {
 	// Image to perform undistort
-	std::string image_path = "G:/Carriageway_37.jpg";
+	std::string image_path = "G:/raw_image.jpg";
 	// Intrinsic parameters
 	double fx = 1738.06409;
 	double fy = 1736.96128;
